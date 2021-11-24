@@ -21,6 +21,9 @@
 
 \usepackage{appendixnumberbeamer}
 
+\usepackage{graphicx}
+\usepackage{graphbox}
+
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 
@@ -53,19 +56,24 @@
     ]{frametitle}%
   \metropolis@frametitlestrut@start\insertframetitle\metropolis@frametitlestrut@end%
   \hfill%
-  \raisebox{-\metropolis@frametitle@padding}{\includegraphics[height=\dimexpr\ht\mybox+\metropolis@frametitle@padding\relax]{2_2016_UBCNarrow_Signature_ReverseCMYK}}%
-    \hspace*{-\metropolis@frametitle@padding}
+  \raisebox{-\metropolis@frametitle@padding}{%
+  \includegraphics[height=\dimexpr\ht\mybox+\metropolis@frametitle@padding\relax]{logos/systopia_white_text}%
+  \includegraphics[height=\dimexpr\ht\mybox+\metropolis@frametitle@padding\relax]{logos/ubc-logo-2018-narrowsig-white-rgb300}}%
+  \hspace*{-\metropolis@frametitle@padding}%
   \end{beamercolorbox}%
 }
 \makeatother
 
-\title{Metropolis}
+\title{UBC-Metropolis}
 \subtitle{A modern beamer theme}
 % \date{\today}
 \date{}
 \author{Matthias Vogelgesang}
 \institute{Center for modern beamer themes}
-% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+\titlegraphic{
+  \hfill
+  \includegraphics[align=t,height=1cm]{logos/systopia_black_text}
+  \includegraphics[align=t,height=1cm]{logos/9_2016_1UnitStandard_CompSci_Blue282RGB300}}
 
 \begin{document}
 
